@@ -3,7 +3,7 @@ Feature: Functional
 
     # Si G0W0 calculation
     Scenario: Si-GW
-        Given that the POTCAR MD5 is 908f33839673b281011b6fe54e91cf3e
+        Given that the POTCAR MD5 is d228a5b41dcb839e26a3c4706e2d5a88
         When I run VASP with a maximum of 16 ranks
         Then the OUTCAR file should contain "QP shifts <psi_nk| G(iteration)W_0 |psi_nk>" 
         and the highest occupied quasi-particle energy should be 5.1537 +/- 0.001 eV
