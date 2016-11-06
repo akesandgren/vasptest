@@ -23,7 +23,7 @@ Feature: Gamma Production
     @gamma
     Scenario: CeO2
         Given that the POTCAR MD5 is 94797ba316498018fa0fb446717f06f5
-        When I run VASP with a maximum of 128 ranks
+        When I run VASP with a maximum of 96 ranks
         Then the total energy should be -850.262131 +/- 2.0e-4 eV
             and self consistency should be reached in 31 iterations
             and the pressure should be -2.65 +/- 0.2 kB
