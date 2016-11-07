@@ -15,10 +15,10 @@ Feature: Custom modifications
         Given that the POTCAR MD5 is adbd1768cd2384d3107d7a5469a5da60
             and a STOPCAR file is present
         When I run VASP with a maximum of 8 ranks
-        Then the total energy should be -8.231456 +/- 1.0e-5 eV
+        Then the total energy should be -8.23078723 +/- 1.0e-5 eV
             and self consistency should be reached in 16 iterations
             and the Fermi energy should be 9.629837 +/- 0.01 eV
-            and the pressure should be -39.29 +/- 0.1 kB
+            and the pressure should be -41.31 +/- 0.1 kB
             and the magnetic moment should be 2.2095 +/- 0.01 uB
             and the point group symmetry should be O_h
             and the XML output should be valid
