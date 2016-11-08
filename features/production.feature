@@ -13,9 +13,9 @@ Feature: Production
     Scenario: PbO2
         Given that the POTCAR MD5 is 0489a4d9cc2584afa60e7c636674e788
         When I run VASP with a maximum of 24 ranks
-        Then the total energy should be -63.174224 +/- 1.0e-5 eV
+        Then the total energy should be -62.79877278 +/- 1.0e-5 eV
             and self consistency should be reached in 14 iterations
-            and the pressure should be 63.11 +/- 5.0 kB
+            and the pressure should be 119.18 +/- 5.0 kB
             and the point group symmetry should be S_2
             and the XML output should be valid
 

@@ -23,3 +23,7 @@ LPARD=.TRUE.
 IBAND=15
 
 !Don't set NPAR
+NCORE=1
+
+# GPU-change
+LREAL=.TRUE.

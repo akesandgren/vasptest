@@ -3,3 +3,6 @@ LSPECTRAL = .TRUE.
 NOMEGA = 50
 NBANDS = 64
 PRECFOCK=Accurate
+
+# GPU-change
+LREAL=.TRUE.

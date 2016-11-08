@@ -7,4 +7,7 @@ ISPIN = 2
 NELMIN = 5
 NELM = 60
 EDIFF = 1E-5
-NPAR = 2
+NCORE=1
+
+# GPU-change
+LREAL=.TRUE.

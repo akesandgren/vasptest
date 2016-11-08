@@ -20,3 +20,7 @@ TIME = 0.4
 PRECFOCK = Fast
 
 !Don't set NPAR
+NCORE=1
+
+# GPU-change
+LREAL=.TRUE.

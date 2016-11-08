@@ -6,7 +6,7 @@ Feature: Gamma Production
     Scenario: SO3
         Given that the POTCAR MD5 is 4823c0c64273f99ca3a80cb37ea000eb
         When I run VASP with a maximum of 16 ranks
-        Then the total energy should be -22.934924 +/- 1.0e-5 eV
+        Then the total energy should be -22.86932804 +/- 1.0e-5 eV
             and self consistency should be reached in 21 iterations
             and the XML output should be valid
    

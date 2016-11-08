@@ -6,13 +6,13 @@ Feature: Functional
         Given that the POTCAR MD5 is d228a5b41dcb839e26a3c4706e2d5a88
         When I run VASP with a maximum of 16 ranks
         Then the OUTCAR file should contain "QP shifts <psi_nk| G(iteration)W_0 |psi_nk>" 
-        and the highest occupied quasi-particle energy should be 5.1462 +/- 0.001 eV
+        and the highest occupied quasi-particle energy should be 5.1492 +/- 0.001 eV
 
     # Run a hybrid calculations
     Scenario: Si-hybrid  
         Given that the POTCAR MD5 is 4e058592231fc4e091ac0c92d87797b0
         When I run VASP with a maximum of 8 ranks
-        Then the total energy should be -41.86884258 +/- 1.0e-5 eV
+        Then the total energy should be -41.88398656 +/- 1.0e-5 eV
         and self consistency should be reached in 14 iterations
         and the point group symmetry should be T_d
         and the XML output should be valid
@@ -32,6 +32,6 @@ Feature: Functional
         Then a DOSCAR file should exist
         and the Fermi energy should be 5.788867 +/- 0.01 eV
         and self consistency should be reached in 8 iterations
-        and the total energy should be -43.35220224 +/- 1.0e-5 eV
+        and the total energy should be -43.60151256 +/- 1.0e-5 eV
         and the DOSCAR file should be identical to the reference file "DOSCAR.ref"
 

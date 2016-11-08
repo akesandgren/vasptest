@@ -6,7 +6,7 @@ ENCUT = 400
 ISPIN  = 1
 
 EDIFF = 1.0E-6
-NPAR = 2
+NCORE=1
 ISMEAR = 0
 SIGMA = 0.05         
 ALGO = fast
@@ -14,3 +14,5 @@ ALGO = fast
 LWAVE=.FALSE.
 LCHARG=.FALSE.
 
+# GPU-change
+LREAL=.TRUE.

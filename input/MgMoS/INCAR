@@ -13,5 +13,5 @@ LWAVE = .FALSE.
 NBANDS = 60
 NELM = 60
 NELMIN = 6
-NPAR = 2
+NCORE=1
 PREC = Accurate
