@@ -4,7 +4,7 @@ Feature: Production
     Scenario: MgMoS
         Given that the POTCAR MD5 is b2b680bb74dbd3d9ba691a82343c4a95
         When I run VASP with a maximum of 16 ranks
-        Then the total energy should be -114.896037 +/- 1.0e-5 eV
+        Then the total energy should be -114.896043 +/- 2.0e-5 eV
             and self consistency should be reached in 15 iterations
             and the pressure should be -13.09 +/- 1.0 kB
             and the point group symmetry should be C_1

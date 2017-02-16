@@ -50,9 +50,9 @@ Feature: Geometry optimization
     Scenario: Si-cd.opt4
         Given that the POTCAR MD5 is 4e058592231fc4e091ac0c92d87797b0
         When I run VASP with a maximum of 8 ranks
-        Then the total energy should be -43.37323716 +/- 1.0e-5 eV
+        Then the total energy should be -43.37323 +/- 1.0e-5 eV
         and the pressure should be 0.0 +/- 1.0 kB
-        and the total number of SCF iterations should be 66
+        and the total number of SCF iterations should be 67
         and the point group symmetry should be C_1
         and the XML output should be valid
         and the number of ionic steps should be 10
