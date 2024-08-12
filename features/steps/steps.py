@@ -15,10 +15,10 @@ def copy_to_temp(context,folder):
 def potcar_md5_check(context,checksum):
     if platform.system() == "Linux":
         # md5sum POTCAR | awk '{print $1}'
-        md5sum = subprocess.check_output(["md5sum","POTCAR"]).split()[0]
+        md5sum = subprocess.check_output(["md5sum","POTCAR"], text=True).split()[0]
     elif platform.system() == "Darwin":
         # md5 POTCAR | awk '{print $4}' 
-        md5sum = subprocess.check_output(["md5","POTCAR"]).split()[3]
+        md5sum = subprocess.check_output(["md5","POTCAR"], text=True).split()[3]
     else:
         assert False
     assert md5sum == checksum
