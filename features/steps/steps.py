@@ -64,7 +64,7 @@ def abs_compare(value,reference,diff):
     return lower < float(value) and float(value) < upper
 
 def shell(command):
-    return subprocess.check_output(command,shell=True).strip()
+    return subprocess.check_output(command,shell=True, text=True).strip()
 
 @then(u'the total energy should be {energy} +/- {diff} eV')
 def energy_check_absolute(context,energy,diff):
