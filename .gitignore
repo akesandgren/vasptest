@@ -2,3 +2,4 @@ POTCAR
 vasptest.log
 slurm-*
 tmp/*/
+sub*
